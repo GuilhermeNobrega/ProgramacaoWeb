@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini projeto</title>
     <link rel="stylesheet" href="cores.css" />
+    <style>
+      .center {
+        min-height: 60vh;
+        text-align: center;
+        background-color: white;
+        width: 50%;
+        border: 15px solid rgba(93, 184, 19, 0.534);
+        padding: 40px;
+        margin: auto;
+        font-size: 18px;
+      }
+    </style>
   </head>
   <body>
-   
-    <div class="center" id="quadradinhos">
+    <div class="center">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/002/205/981/small/lock-icon-free-vector.jpg"
+        alt=""
+      />
       <h1>Login:</h1>
       <h3>Insira abaixo seu login e senha de acesso</h3>
-      <label for="fname">Seu nome:</label><br/>
-      <input id="name_input" type="text" /><br/>
-      <label for="fname">Sua senha doida:</label><br/>
-      <input id="name_input" type="text" /><br/>
+      <label for="name_input">Seu nome:</label><br />
+      <input id="name_input" type="text" /><br />
+      <label for="password_input">Sua senha</label><br />
+      <input id="password_input" type="password" /><br />
+    </div>
+  </body>
+</html>
