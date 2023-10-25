@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projeto</title>
+    <link rel="stylesheet" href="cores.css"
+</head>
+<header>
+ <style>
+    .quadradao{
+    text-align: center;
+    background-color:white;
+    width: 300px;
+    border: 15px solid rgba(116, 93, 47, 0.534);
+    padding: 40px;
+    margin:auto;
+    left: 30px;
+    width: 50%;
+    font-size: 18px;
+    }
+    </style>
+    <div class="quadradao"
+</div>
+
+    </div>
+</header>
+<body>    
+    <style>
+    .center{
+    min-height:60vh;
+    text-align: center;
+    background-color:white;
+    width: 300px;
+    border: 15px solid rgba(116, 93, 47, 0.534);
+    padding: 40px;
+    margin:auto;
+    left: 30px;
+    width: 50%;
+    font-size: 18px;
+      }
+</style>
+<div class="center">
+    <h1>Lógin:</h1>
+    <h3>Insira abaixo seu nome e senha para acesso</h3>
+        <label for="fname">Nome</label><br>
+        <input type="text"><br>
+        <button>Enviar</button><br>
+        <label for="fname">Data_Nascimento</label><br>
+        <input type="number"><br>
+        <button>Enviar</button><br>
+        <script>
+            //window.alert("Campo Nome ou data inválidos!!");
+            //window.confirm("Deseja enviar?");
+            var nome = window.prompt("Digite seu nome")
+            //window.alert("Seja bem vindo, " + nome + "!")
+            window.alert(`Seja bem vindo, ${nome}`);
+            document.write(`<h2> Seu nome possue ${nome.length} sílabas </h2>`)
+            var data_nasc = Number(window.prompt("Digite sua data de aniversario"))
+            if(data_nasc == 16092003){
+                window.alert("Se seu aniversario for setembro, vc do signo virgem")
+            }
+            </script>
+</div>
+</body>
+<footer>
+    <style>
+        .final{
+            margin-top:auto;
+            text-align:center;
+            text-decoration: blue;
+            text-decoration-color:black;
+        }
+    </style>
+    <div class="final">
+        <h5>Developed by Guilherme </h5>
+    </div>
+</footer>
