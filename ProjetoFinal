@@ -1,0 +1,70 @@
+Trabalho Final
+
+A disciplina em termos de avaliação é composta por três menções. A primeira e segunda menções são planilhas de acompanhamento de exercícios e presença.
+
+A terceira menção é o trabalho final.
+
+No mês de Novembro iremos apresentar um projeto baseado no Banco de Sementes e em paralelo os grupos deverão desenvolver o projeto final.
+
+A Turma A poderá ter até quatro grupos.
+
+A Turma B poderá ter até cinco grupos.
+
+Cada grupo poderá ter no máximo 7 (sete) integrantes.
+
+A nota final é composta por três notas:
+
+50% acompanhamento (professor): Os alunos deverão procurar o professor na segunda parte das aulas de novembro para mostrar de forma individual ou de pequenos grupos os artefatos que confeccionaram para avaliar se estão corretos e também para ganhar pontos.
+
+Com essa dinâmica os alunos deverão produzir e mostrar durante o mês de novembro para ter nota.
+
+25% será aferida pelo coordenador do curso no dia da apresentação final, provavelmente no dia 07/12 e/ou no dia 12/12.
+
+25% será aferida por notas de formulários dos próprios alunos presentes por formulário eletrônico.
+
+
+
+
+
+
+
+Artefatos:
+
+-> Plano de Projeto
+-> Modelo de Dados (no Workbench)
+-> Base de Dados com Dados para Testes Reais (Backup do Banco .sql)
+-> Protótipo em HTML/CSS/JavaScript
+-> Organização do Projeto Final em MVC
+-> Camada Model (no Padrão DAO)
+-> Camada View final (no Padrão HTML/CSS/JavaScript)
+-> Camada Controller (em Python/Flask)
+-> Apresentação do Projeto (Slides)
+
+
+Tema:
+
+> Aplicação web para registro de ocorrências.
+
+Requisitos obrigatórios:
+
+Registro das pessoas que colaboram com as ocorrências
+Registro das ocorrências
+Incremento das ocorrências
+Tipificação das ocorrências
+Lixo
+Buraco em pista
+Assalto
+Bueiro sem proteção
+Placa danificada
+Banco danificado
+Calçada danificada
+Entre outros
+Anexar fotos
+Anexar vídeos
+Datar as ocorrências
+Mostrar ocorrências (público):
+Por tipo
+Por área
+Em mapas
+Por horário
+Exportar para excel ocorrências por órgão governamental responsável pelo tipo de ocorrência
