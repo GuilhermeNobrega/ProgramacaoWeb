@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini projeto</title>
+    <link rel="stylesheet" href="bunito.css">
+</head>
+<body>
+<div class="center">
+    <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/002/205/981/small/lock-icon-free-vector.jpg"
+        alt=""
+    />
+    <form>
+        <h1>Registro de ocorrências.</h1>
+        <h3>Insira abaixo seu login e senha de acesso</h3>
+        <label for="name_input">Seu nome:</label>
+        <input id="name_input" type="text" placeholder="Digite seu nome" />
+        <label for="password_input">Sua senha</label>
+        <input id="password_input" type="password" placeholder="Digite sua senha" />
+        <p>
+            <label for="habi">Eu li e aceito os <a target="_blank" href="https://assets-global.website-files.com/60ff690cd7b0537edb99a29a/64657419a04f130bb1952b56_Terry%20Crews%20-%20Carreira%2C%20Filmes%20e%20%22Cancelamentos%22.jpg">termos de uso</a>.</label>
+            <input type="checkbox" id="habi">
+        </p>
+        <button type="button" onclick="Enviar()">Login</button>
+        <button type="button" onclick="CriarUsuario()">Criar Novo Usuário</button>
+    </form>
+    <script>
+        const nomes_login = [];
+
+        const Enviar = () => {
+            const nameInputValue = document.getElementById("name_input").value;
+            const passwordInputValue = document.getElementById("password_input").value;
+            const Aceitar = document.getElementById("habi").checked;
+            if (!Aceitar) {
+                alert("Você deve aceitar os termos de uso antes de prosseguir.");
+            }
+            else if (nameInputValue && passwordInputValue) {
+                nomes_login.push({ Nome: nameInputValue, Senha: passwordInputValue });
+                console.log(nomes_login);
+            } else {
+                alert("Preencha os campos de nome e senha antes de enviar.");
+            }
+        }
+
+        const CriarUsuario = () => {
+            // Redirecionar para a página de criação de usuário
+            window.location.href = 'CriarUsuario.html';
+        }
+    </script>
+</div>
+</body>
+</html>

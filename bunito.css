@@ -1,0 +1,57 @@
+
+.center {
+    min-height: 60vh;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border: 15px solid rgba(146, 153, 141, 0.534);
+    padding: 40px;
+    margin: auto;
+    font-size: 18px;
+}
+
+body {
+    background-color: rgba(209, 144, 60, 0.534);
+    background-image: url('https://static.poder360.com.br/2021/04/congresso-historicas.gif');
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 14px;
+    background-color: #38be74;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #38be74;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
