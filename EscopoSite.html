@@ -11,7 +11,7 @@
         text-align: center;
         background-color: white;
         width: 50%;
-        border: 15px solid rgba(95, 172, 32, 0.534);
+        border: 15px solid rgba(146, 153, 141, 0.534);
         padding: 40px;
         margin: auto;
         font-size: 18px;
@@ -19,10 +19,39 @@
     </style>
     <style>
       body {
-      background-color: rgba(207, 131, 32, 0.534);
-      background-image: url('https://chocolate.co.ao/wp-content/uploads/2021/08/6fe93cfbe6a3891d9ffc-51.jpg');
+      background-color: rgba(209, 144, 60, 0.534);
+      background-image: url('https://static.poder360.com.br/2021/04/congresso-historicas.gif');
 }
-
+      form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #17bd62;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
   </head>
   <body>
@@ -31,12 +60,24 @@
         src="https://static.vecteezy.com/system/resources/thumbnails/002/205/981/small/lock-icon-free-vector.jpg"
         alt=""
       />
-      <h1>Login:</h1>
-      <h3>Insira abaixo seu login e senha de acesso</h3>
-      <label for="name_input">Seu nome:</label><br />
-      <input id="name_input" type="text" /><br />
-      <label for="password_input">Sua senha</label><br />
-      <input id="password_input" type="password" /><br />
+      <form>
+        <h1>Registro de ocorrências.</h1>
+        <h3>Insira abaixo seu login e senha de acesso</h3>
+        <label for="name_input">Seu nome:</label><br />
+        <input id="name_input" type="text" /><br />
+        <label for="password_input">Sua senha</label><br />
+        <input id="password_input" type="password" /><br />
+        <button onclick="Enviar()">Enviar</button><br />
+      </form>
+      <script>
+        const Enviar =() => {
+          var nomes_login = [];
+          let nameInputValue = document.getElementById("name_input").value;
+          let passwordInputValue = document.getElementById("password_input").value;
+          nomes_login.push({Nome:nameInputValue, Senha: passwordInputValue});
+          console.log(nomes_login);
+        }
+      </script>
     </div>
   </body>
 </html>
