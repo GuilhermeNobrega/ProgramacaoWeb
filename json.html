@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de JSON para HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <ul id="items-list"></ul>
+
+    <script>
+        // JSON de exemplo
+        const data = {
+            "title": "Lista de Compras",
+            "items": [
+                "Maçãs",
+                "Pães",
+                "Leite",
+                "Ovos"
+            ]
+        };
+
+        // Inserindo o título
+        document.getElementById('title').textContent = data.title;
+
+        // Inserindo os itens da lista
+        const itemsList = document.getElementById('items-list');
+        data.items.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            itemsList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
