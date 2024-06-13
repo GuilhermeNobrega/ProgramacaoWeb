@@ -42,10 +42,10 @@
         // Inserindo os itens da lista
         const itemsList = document.getElementById('items-list');
         data.items.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = item;
-            itemsList.appendChild(listItem);
-        });
+        const listItem = document.createElement('li'); // Cria um novo elemento <li>
+        listItem.textContent = item; // Define o texto do <li> com o valor do item atual
+        itemsList.appendChild(listItem); // Adiciona o <li> à lista <ul>
+    });
     </script>
 </body>
 </html>
